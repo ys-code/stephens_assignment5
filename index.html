@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        input:invalid{border: 1px solid red;}
+        form {width: 30%; padding: 20px;background-color: rgb(194, 193, 193);
+              border:3px solid rgb(8, 224, 240);}
+        #submit{background-color: aqua;}
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm">
+        <div class="form-group">
+            <label for="id">8-Digit Employee ID</label>
+            <input type="text" class="form-control" id="id" maxlength="8" name="ID" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="Name" required>
+        </div>
+        <div class="form-group">
+            <label for="ext">4-Digit Extension</label>
+            <input type="text" class="form-control" id="ext" maxlength="4" name="Extension" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" name="Email" required>
+        </div>
+        <div class="form-group">
+            <label for="department">Department</label>
+                 <select class="form-control" id="department" name="Department" required>
+                    <option>Administrative</option>
+                    <option>Engineering</option>
+                    <option>Executive</option>
+                    <option>Marketing</option>
+                    <option>Quality Assurance</option>
+                    <option>Sales</option>
+                </select>
+        </div>
+        <div class="form-group">
+            <label for="submit"></label>
+            <input type="submit" class="form-control" id="submit">
+        </div>
+    </form>
+</body>
+</html>
